@@ -1,4 +1,6 @@
-import java.util.HashSet;
+package Hashing;
+
+import java.util.*;
 
 /**
  * AllTriplets
