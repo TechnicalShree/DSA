@@ -1,5 +1,7 @@
 package Sorting;
 
+import Utility.PrintArray;
+
 public class QuickSort {
     static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
@@ -8,7 +10,7 @@ public class QuickSort {
     }
 
     static int partition(int[] arr, int l, int h) {
-        int pivot = h;
+        int pivot = arr[h];
         int i = l - 1;
 
         for (int j = l; j < h; j++) {

@@ -1,5 +1,7 @@
 package Sorting;
 
+import Utility.PrintArray;
+
 /**
  * SelectionSort
  */

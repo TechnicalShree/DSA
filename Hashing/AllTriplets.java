@@ -2,9 +2,6 @@ package Hashing;
 
 import java.util.*;
 
-/**
- * AllTriplets
- */
 public class AllTriplets {
     static void findAllTriplets(int[] arr, int sum) {
         int n = arr.length;

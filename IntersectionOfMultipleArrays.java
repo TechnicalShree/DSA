@@ -6,7 +6,7 @@ public class IntersectionOfMultipleArrays {
         int[] count = new int[1001];
 
         for (int[] A : mat)
-            for (final int a : A)
+            for (int a : A)
                 ++count[a];
 
         for (int i = 1; i < 1001; ++i)
@@ -19,8 +19,6 @@ public class IntersectionOfMultipleArrays {
     public static void main(String[] args) {
         int[][] mat = { { 3, 1, 2, 4, 5 }, { 1, 2, 3, 4 }, { 3, 4, 5, 6 } };
 
-        List<Integer> res = intersection(mat);
-
-        System.out.println(res);
+        System.out.println(intersection(mat));
     }
 }

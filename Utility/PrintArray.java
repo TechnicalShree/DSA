@@ -1,4 +1,4 @@
-package Sorting;
+package Utility;
 
 public class PrintArray {
     public void print(int[] arr) {

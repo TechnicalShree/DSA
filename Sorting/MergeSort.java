@@ -1,5 +1,7 @@
 package Sorting;
 
+import Utility.PrintArray;
+
 public class MergeSort {
 
     static void merge(int[] arr, int l, int m, int r) {

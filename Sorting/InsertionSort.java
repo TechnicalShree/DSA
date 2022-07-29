@@ -1,5 +1,7 @@
 package Sorting;
 
+import Utility.PrintArray;
+
 public class InsertionSort {
 
     static void insertionSort(int[] arr) {

@@ -1,8 +1,5 @@
 package Recursion;
 
-/**
- * PrintAllPowerSet
- */
 public class PrintAllPowerSet {
     static void printAllPowerSet(String str, int i, String curr) {
         if (i == str.length()) {

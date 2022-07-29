@@ -31,5 +31,6 @@ public class FindAllMissingNums {
                 list.add(i);
         }
 
+        System.out.println(list);
     }
 }
