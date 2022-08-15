@@ -1,6 +1,8 @@
+package Strings;
+
 import java.util.*;
 
-public class Trail {
+public class GroupAnagrams {
     public static final int d = 256;
 
     public static List<List<String>> groupAnagrams(String[] strs, int q) {

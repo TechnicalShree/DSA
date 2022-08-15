@@ -3,18 +3,19 @@ package Trees;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class BinaryTree {
-    static class Node {
-        int data;
-        Node left;
-        Node right;
+class Node {
+    int data;
+    Node left;
+    Node right;
 
-        Node(int data) {
-            this.data = data;
-            this.left = null;
-            this.right = null;
-        }
+    Node(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
     }
+}
+
+public class BinaryTree {
 
     static class BinaryTrees {
         static int idx = -1;

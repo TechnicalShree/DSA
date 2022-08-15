@@ -1,11 +1,11 @@
 package Node;
 
 public class Node {
-    int data;
-    Node left;
-    Node right;
+    public int data;
+    public Node left;
+    public Node right;
 
-    Node(int data) {
+    public Node(int data) {
         this.data = data;
         this.left = null;
         this.right = null;

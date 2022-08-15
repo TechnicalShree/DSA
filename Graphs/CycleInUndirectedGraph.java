@@ -2,40 +2,40 @@ package Graphs;
 
 import java.util.*;
 
-public class IsCycleDirectedGraph {
+public class CycleInUndirectedGraph {
     public static void addEdge(ArrayList<ArrayList<Integer>> adj, int a, int b) {
         adj.get(a).add(b);
+        adj.get(b).add(a);
     }
 
     public static boolean isCyclic(int v, ArrayList<ArrayList<Integer>> adj) {
         boolean[] vis = new boolean[v];
-        boolean[] recS = new boolean[v];
 
-        for (int i = 0; i < v; i++) {
+        for (int i = 0; i < adj.size(); i++) {
             if (!vis[i]) {
-                if (dfs(i, adj, vis, recS)) {
+                if (dfs(i, adj, vis, -1)) {
                     return true;
                 }
             }
         }
+
         return false;
+
     }
 
-    private static boolean dfs(int v, ArrayList<ArrayList<Integer>> adj, boolean[] vis, boolean[] recS) {
+    public static boolean dfs(int v, ArrayList<ArrayList<Integer>> adj, boolean[] vis, int parent) {
         vis[v] = true;
-        recS[v] = true;
 
-        for (int el : adj.get(v)) {
-            if (!vis[el]) {
-                if (dfs(el, adj, vis, recS)) {
+        for (Integer ele : adj.get(v)) {
+            if (!vis[ele]) {
+                if (dfs(ele, adj, vis, v)) {
+                    return true;
+                } else if (ele != parent) {
                     return true;
                 }
-            } else if (recS[el]) {
-                return true;
             }
         }
 
-        recS[v] = false;
         return false;
     }
 
@@ -55,7 +55,8 @@ public class IsCycleDirectedGraph {
                 int b = sc.nextInt();
                 addEdge(adj, a, b);
             }
-        }
 
+            System.out.println(isCyclic(V, adj));
+        }
     }
 }
