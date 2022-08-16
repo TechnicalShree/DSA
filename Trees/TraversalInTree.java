@@ -1,5 +1,7 @@
 package Trees;
 
+import Node.Node;
+
 public class TraversalInTree {
     static void preOrder(Node root) {
         if (root == null) {

@@ -30,9 +30,9 @@ public class CycleInUndirectedGraph {
             if (!vis[ele]) {
                 if (dfs(ele, adj, vis, v)) {
                     return true;
-                } else if (ele != parent) {
-                    return true;
                 }
+            } else if (ele != parent) {
+                return true;
             }
         }
 

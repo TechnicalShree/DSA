@@ -2,18 +2,7 @@ package Trees;
 
 import java.util.Deque;
 import java.util.LinkedList;
-
-class Node {
-    int data;
-    Node left;
-    Node right;
-
-    Node(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
+import Node.Node;
 
 public class BinaryTree {
 
@@ -35,7 +24,6 @@ public class BinaryTree {
 
     public static void preOrder(Node root) { // Pre-Order Traversal
         if (root == null) {
-            // System.out.print(-1 + " ");
             return;
         }
 
