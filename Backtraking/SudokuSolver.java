@@ -14,8 +14,8 @@ public class SudokuSolver {
                 return false;
             }
         }
-        int startRow = a - (a % 3);
-        int startCol = b - (b % 3);
+        // int startRow = a - (a % 3);
+        // int startCol = b - (b % 3);
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (i != a && j != b && board[i][j] == board[a][b]) {
